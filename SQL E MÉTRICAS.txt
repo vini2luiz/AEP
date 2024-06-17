@@ -1,0 +1,30 @@
+CREATE TABLE users (
+  id SERIAL PRIMARY KEY,
+  username VARCHAR(50) NOT NULL UNIQUE,
+  password VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE opportunities (
+  id SERIAL PRIMARY KEY,
+  title VARCHAR(100) NOT NULL,
+  description TEXT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+----------------------------------------------------------
+Gramática regular:
+
+S -> aS | bS | cS | dS | eS | fS | gS | hS | iS | jS | kS | lS | mS | nS | oS | pS | qS | rS | sS | tS | uS | vS | wS | xS | yS | zS |
+
+PESQUISA DE MERCADO:
+Acesso a Oportunidades de Emprego: Taxa de sucesso de match entre candidatos e vagas.
+Educação e Capacitação: Número de cursos concluídos e certificações emitidas.
+Doações Recebidas: Volume de doações e distribuição eficaz dos recursos.
+Impacto Social: Testemunhos e estudos de caso de beneficiados.
+
+MÉTRICAS:
+Performance: Tempo de carregamento e interatividade.
+Acessibilidade: Medidas para garantir que o site seja utilizável por todos.
+Boas Práticas: Padrões de segurança e práticas recomendadas.
+SEO: Otimização para mecanismos de busca.
